@@ -22,7 +22,7 @@ class ChatViewModel: ViewModel() {
     val chatUIState = _chatUIState.asStateFlow()
     private val generativeModel : GenerativeModel = GenerativeModel(
         modelName = "gemini-pro",
-        apiKey = "AIzaSyB9hKwW6IS4iRRKhC8CTak-oYinefEtHjY"
+        apiKey = "Replace you api key"
     )
 
     fun onEvent(event: ChatUIEvents) {
