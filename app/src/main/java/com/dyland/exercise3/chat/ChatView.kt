@@ -89,12 +89,12 @@ fun ChatView(modifier: Modifier = Modifier,viewModel: ChatViewModel, context: Co
                 TextField(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(50.dp),
+                        .height(160.dp),
                     value = valueTextField.value,
                     onValueChange = {
                         valueTextField.value = it
                     },
-                    maxLines = 10,
+                    singleLine = false,
                     label = {
                         Text(text = "Type something")
                     },

@@ -50,7 +50,7 @@ class ChatViewModel: ViewModel() {
                         content (it.role) { text(it.message) }
                     }.toList()
                 )
-                val response = chat.sendMessage(message)
+                val response = chat.sendMessage(message + "Phân tích cho tôi đoạn văn trên")
                 _chatUIState.update {
                     it.copy(
                         isLoading = false,
